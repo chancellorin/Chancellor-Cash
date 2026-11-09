@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="245" id="KGk-i7-Jjw" customClass="SSVeteranTableCell" customModule="Sherlock" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNF-pG-6wK">
+                        <rect key="frame" x="14" y="7" width="292" height="230"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xya-Oc-vYr" customClass="SSVeteranTableCelltact" customModule="Sherlock" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="292" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="8xZ-kB-TKh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lV1-iJ-zyK">
+                                <rect key="frame" x="0.0" y="45" width="292" height="1"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="eLl-cv-pj0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuj-gP-AKd" customClass="SSVeteranTableCellinfo" customModule="Sherlock" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="46" width="292" height="184"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lV1-iJ-zyK" secondAttribute="trailing" id="Af2-QM-C5o"/>
+                            <constraint firstItem="xya-Oc-vYr" firstAttribute="top" secondItem="qNF-pG-6wK" secondAttribute="top" id="Fvs-cj-FPz"/>
+                            <constraint firstItem="lV1-iJ-zyK" firstAttribute="leading" secondItem="qNF-pG-6wK" secondAttribute="leading" id="ILW-hj-FkQ"/>
+                            <constraint firstAttribute="bottom" secondItem="wuj-gP-AKd" secondAttribute="bottom" id="Jfz-iM-OYg"/>
+                            <constraint firstAttribute="height" constant="230" id="M2f-qB-fGf"/>
+                            <constraint firstItem="xya-Oc-vYr" firstAttribute="leading" secondItem="qNF-pG-6wK" secondAttribute="leading" id="e9m-f7-Njm"/>
+                            <constraint firstItem="lV1-iJ-zyK" firstAttribute="top" secondItem="xya-Oc-vYr" secondAttribute="bottom" id="ewU-lo-qBA"/>
+                            <constraint firstItem="wuj-gP-AKd" firstAttribute="top" secondItem="lV1-iJ-zyK" secondAttribute="bottom" id="fKC-hX-J7K"/>
+                            <constraint firstItem="wuj-gP-AKd" firstAttribute="leading" secondItem="qNF-pG-6wK" secondAttribute="leading" id="gbB-lZ-4zT"/>
+                            <constraint firstAttribute="trailing" secondItem="wuj-gP-AKd" secondAttribute="trailing" id="kvC-fO-987"/>
+                            <constraint firstAttribute="trailing" secondItem="xya-Oc-vYr" secondAttribute="trailing" id="yq9-l2-QXi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ss_cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ss_borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="ss_borderColor">
+                                <color key="value" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qNF-pG-6wK" secondAttribute="bottom" constant="7" id="3Fx-mp-kik"/>
+                    <constraint firstItem="qNF-pG-6wK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="oab-2x-XAz"/>
+                    <constraint firstItem="qNF-pG-6wK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="qjA-ZS-Sxv"/>
+                    <constraint firstAttribute="trailing" secondItem="qNF-pG-6wK" secondAttribute="trailing" constant="14" id="zgs-Ea-TtC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="veteraninfo" destination="wuj-gP-AKd" id="5OZ-Jh-keh"/>
+                <outlet property="veterantact" destination="xya-Oc-vYr" id="y1s-m5-l44"/>
+                <outlet property="veterantbgv" destination="qNF-pG-6wK" id="hub-4s-hrN"/>
+            </connections>
+            <point key="canvasLocation" x="68.702290076335871" y="42.605633802816904"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSDoctorViewController" customModule="Sherlock" customModuleProvider="target">
+            <connections>
+                <outlet property="doctorappv" destination="yUv-zb-1v7" id="7oB-ZI-Eb3"/>
+                <outlet property="doctormit" destination="ubK-ly-ocE" id="paE-xS-o9E"/>
+                <outlet property="doctorpicv" destination="AxP-dM-1A3" id="BPm-ds-Rvz"/>
+                <outlet property="doctorttionv" destination="J2t-8T-r7b" id="0wh-bP-Cxf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMm-WE-yfQ">
+                    <rect key="frame" x="0.0" y="128" width="393" height="640"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SId-Xt-ybc" customClass="SSDoctorLabel" customModule="Sherlock" customModuleProvider="target">
+                            <rect key="frame" x="14" y="0.0" width="365" height="0.0"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.0" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ss_cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ss_borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="ss_borderColor">
+                                    <color key="value" red="0.66666666669999997" green="1" blue="0.0" alpha="0.13" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2t-8T-r7b" customClass="SSDoctorPredicttion" customModule="Sherlock" customModuleProvider="target">
+                            <rect key="frame" x="14" y="14" width="365" height="189"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="189" id="Kg7-ms-gJy"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AxP-dM-1A3" customClass="SSDoctorPredictpic" customModule="Sherlock" customModuleProvider="target">
+                            <rect key="frame" x="14" y="217" width="365" height="127"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="127" id="Aoe-op-upN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUv-zb-1v7" customClass="SSDoctorPredictapp" customModule="Sherlock" customModuleProvider="target">
+                            <rect key="frame" x="14" y="358" width="365" height="127"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="127" id="8ZS-nO-MXk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="AxP-dM-1A3" firstAttribute="leading" secondItem="J2t-8T-r7b" secondAttribute="leading" id="74d-80-df8"/>
+                        <constraint firstItem="yUv-zb-1v7" firstAttribute="leading" secondItem="J2t-8T-r7b" secondAttribute="leading" id="AgU-g3-i6U"/>
+                        <constraint firstItem="AxP-dM-1A3" firstAttribute="trailing" secondItem="J2t-8T-r7b" secondAttribute="trailing" id="Lzq-Im-1j4"/>
+                        <constraint firstItem="J2t-8T-r7b" firstAttribute="trailing" secondItem="SId-Xt-ybc" secondAttribute="trailing" id="P5p-JZ-ZMD"/>
+                        <constraint firstAttribute="bottom" secondItem="yUv-zb-1v7" secondAttribute="bottom" constant="14" id="YGG-vu-iG2"/>
+                        <constraint firstItem="J2t-8T-r7b" firstAttribute="leading" secondItem="SId-Xt-ybc" secondAttribute="leading" id="aTJ-JJ-fw1"/>
+                        <constraint firstItem="J2t-8T-r7b" firstAttribute="top" secondItem="SId-Xt-ybc" secondAttribute="bottom" constant="14" id="bL9-6l-Rym"/>
+                        <constraint firstItem="yUv-zb-1v7" firstAttribute="top" secondItem="AxP-dM-1A3" secondAttribute="bottom" constant="14" id="gbH-YU-Kjo"/>
+                        <constraint firstItem="yUv-zb-1v7" firstAttribute="trailing" secondItem="J2t-8T-r7b" secondAttribute="trailing" id="h7G-fa-lPT"/>
+                        <constraint firstAttribute="trailing" secondItem="SId-Xt-ybc" secondAttribute="trailing" constant="14" id="iO7-Ye-FU3"/>
+                        <constraint firstItem="SId-Xt-ybc" firstAttribute="top" secondItem="RMm-WE-yfQ" secondAttribute="top" id="joQ-CW-RBF"/>
+                        <constraint firstItem="AxP-dM-1A3" firstAttribute="top" secondItem="J2t-8T-r7b" secondAttribute="bottom" constant="14" id="mi8-hs-63h"/>
+                        <constraint firstItem="SId-Xt-ybc" firstAttribute="centerX" secondItem="RMm-WE-yfQ" secondAttribute="centerX" id="sug-Lh-Xld"/>
+                        <constraint firstItem="SId-Xt-ybc" firstAttribute="leading" secondItem="RMm-WE-yfQ" secondAttribute="leading" constant="14" id="tkT-9H-iyP"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubK-ly-ocE">
+                    <rect key="frame" x="14" y="778" width="365" height="50"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PwI-Fj-diu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ss_cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doctorbttselect:" destination="-1" eventType="touchUpInside" id="u7x-An-tU8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ubK-ly-ocE" secondAttribute="trailing" constant="14" id="9EH-en-j8z"/>
+                <constraint firstItem="RMm-WE-yfQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="QgU-ES-rHo"/>
+                <constraint firstItem="ubK-ly-ocE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="dOy-xc-y6b"/>
+                <constraint firstItem="ubK-ly-ocE" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-24" id="h0b-08-LtT"/>
+                <constraint firstItem="RMm-WE-yfQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ksW-48-juN"/>
+                <constraint firstItem="ubK-ly-ocE" firstAttribute="top" secondItem="RMm-WE-yfQ" secondAttribute="bottom" constant="10" id="tC9-m2-DbO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RMm-WE-yfQ" secondAttribute="trailing" id="w8L-EX-WT4"/>
+            </constraints>
+            <point key="canvasLocation" x="-34.351145038167935" y="20.422535211267608"/>
+        </view>
+    </objects>
+</document>

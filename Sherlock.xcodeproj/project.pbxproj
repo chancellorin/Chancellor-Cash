@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FDAAAAD1B7407C0F5BAF493 /* Pods_Sherlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE969602CFD636AA4ED7A62 /* Pods_Sherlock.framework */; };
+		C4BE7CE62FF7AD100087AD0A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BE7CE52FF7AD100087AD0A /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4BE7CE82FF7AD170087AD0A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BE7CE72FF7AD170087AD0A /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4BE7CEA2FF7AD200087AD0A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BE7CE92FF7AD200087AD0A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4BE7CEC2FF7AD250087AD0A /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BE7CEB2FF7AD250087AD0A /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4BE7CEE2FF7AD2E0087AD0A /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BE7CED2FF7AD2E0087AD0A /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1643E0B724626ED15A8CC3ED /* Pods-Sherlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherlock.release.xcconfig"; path = "Target Support Files/Pods-Sherlock/Pods-Sherlock.release.xcconfig"; sourceTree = "<group>"; };
+		734758ABF019C547B22509D8 /* Pods-Sherlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherlock.debug.xcconfig"; path = "Target Support Files/Pods-Sherlock/Pods-Sherlock.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE969602CFD636AA4ED7A62 /* Pods_Sherlock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sherlock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BE7CE52FF7AD100087AD0A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C4BE7CE72FF7AD170087AD0A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C4BE7CE92FF7AD200087AD0A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C4BE7CEB2FF7AD250087AD0A /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		C4BE7CED2FF7AD2E0087AD0A /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		C4E6077C2FEB68AA00AD67A3 /* Sherlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C4E6078E2FEB68AB00AD67A3 /* Exceptions for "Sherlock" folder in "Sherlock" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C4E6077B2FEB68AA00AD67A3 /* Sherlock */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C4E6077E2FEB68AA00AD67A3 /* Sherlock */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C4E6078E2FEB68AB00AD67A3 /* Exceptions for "Sherlock" folder in "Sherlock" target */,
+			);
+			path = Sherlock;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4E607792FEB68AA00AD67A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4BE7CEE2FF7AD2E0087AD0A /* AppTrackingTransparency.framework in Frameworks */,
+				C4BE7CEC2FF7AD250087AD0A /* AdServices.framework in Frameworks */,
+				C4BE7CEA2FF7AD200087AD0A /* AdSupport.framework in Frameworks */,
+				C4BE7CE82FF7AD170087AD0A /* StoreKit.framework in Frameworks */,
+				C4BE7CE62FF7AD100087AD0A /* WebKit.framework in Frameworks */,
+				4FDAAAAD1B7407C0F5BAF493 /* Pods_Sherlock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4E607732FEB68AA00AD67A3 = {
+			isa = PBXGroup;
+			children = (
+				C4E6077E2FEB68AA00AD67A3 /* Sherlock */,
+				C4E6077D2FEB68AA00AD67A3 /* Products */,
+				FA5D0DE063B1F0C5C910BB61 /* Pods */,
+				DEF194D324D8B3A75A55434C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4E6077D2FEB68AA00AD67A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4E6077C2FEB68AA00AD67A3 /* Sherlock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF194D324D8B3A75A55434C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4BE7CED2FF7AD2E0087AD0A /* AppTrackingTransparency.framework */,
+				C4BE7CEB2FF7AD250087AD0A /* AdServices.framework */,
+				C4BE7CE92FF7AD200087AD0A /* AdSupport.framework */,
+				C4BE7CE72FF7AD170087AD0A /* StoreKit.framework */,
+				C4BE7CE52FF7AD100087AD0A /* WebKit.framework */,
+				BCE969602CFD636AA4ED7A62 /* Pods_Sherlock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5D0DE063B1F0C5C910BB61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				734758ABF019C547B22509D8 /* Pods-Sherlock.debug.xcconfig */,
+				1643E0B724626ED15A8CC3ED /* Pods-Sherlock.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4E6077B2FEB68AA00AD67A3 /* Sherlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E6078F2FEB68AB00AD67A3 /* Build configuration list for PBXNativeTarget "Sherlock" */;
+			buildPhases = (
+				F89AA1BBA66545F46FF78383 /* [CP] Check Pods Manifest.lock */,
+				C4E607782FEB68AA00AD67A3 /* Sources */,
+				C4E607792FEB68AA00AD67A3 /* Frameworks */,
+				C4E6077A2FEB68AA00AD67A3 /* Resources */,
+				008DCC19142C923C8EA11788 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C4E6077E2FEB68AA00AD67A3 /* Sherlock */,
+			);
+			name = Sherlock;
+			productName = Sherlock;
+			productReference = C4E6077C2FEB68AA00AD67A3 /* Sherlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4E607742FEB68AA00AD67A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					C4E6077B2FEB68AA00AD67A3 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = C4E607772FEB68AA00AD67A3 /* Build configuration list for PBXProject "Sherlock" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4E607732FEB68AA00AD67A3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C4E6077D2FEB68AA00AD67A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4E6077B2FEB68AA00AD67A3 /* Sherlock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4E6077A2FEB68AA00AD67A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		008DCC19142C923C8EA11788 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sherlock/Pods-Sherlock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sherlock/Pods-Sherlock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sherlock/Pods-Sherlock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89AA1BBA66545F46FF78383 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sherlock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4E607782FEB68AA00AD67A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C4E607902FEB68AB00AD67A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734758ABF019C547B22509D8 /* Pods-Sherlock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sherlock/Sherlock.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 233478RV39;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sherlock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chancellor Cash";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Chancellor Cash requests camera access to help you quickly submit relevant materials. The capture feature makes information entry more convenient. We value your privacy and take reasonable measures to protect related data. Permission settings can be adjusted at any time.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "To strengthen account protection, Chancellor Cash hopes to obtain your contacts access permission. This will support us in performing necessary identity confirmation. We highly value user privacy and security. Contact information is used only for security-related purposes. The data will no longer be retained after verification. You can adjust this authorization at any time in Settings.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need location permission to optimize loan plans based on your region. This helps improve service quality. All data will no longer be retained after processing.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need location permission to optimize loan plans based on your region. This helps improve service quality. All data will no longer be retained after processing.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "To make service recommendations closer to your actual needs, Chancellor Cash may use IDFA and similar advertising identifiers for preference analysis and experience optimization.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chancellorcash.glimora.flow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = chancellorcashPro;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C4E607912FEB68AB00AD67A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1643E0B724626ED15A8CC3ED /* Pods-Sherlock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sherlock/Sherlock.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 233478RV39;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sherlock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chancellor Cash";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Chancellor Cash requests camera access to help you quickly submit relevant materials. The capture feature makes information entry more convenient. We value your privacy and take reasonable measures to protect related data. Permission settings can be adjusted at any time.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "To strengthen account protection, Chancellor Cash hopes to obtain your contacts access permission. This will support us in performing necessary identity confirmation. We highly value user privacy and security. Contact information is used only for security-related purposes. The data will no longer be retained after verification. You can adjust this authorization at any time in Settings.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need location permission to optimize loan plans based on your region. This helps improve service quality. All data will no longer be retained after processing.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need location permission to optimize loan plans based on your region. This helps improve service quality. All data will no longer be retained after processing.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "To make service recommendations closer to your actual needs, Chancellor Cash may use IDFA and similar advertising identifiers for preference analysis and experience optimization.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chancellorcash.glimora.flow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = chancellorcashPro;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C4E607922FEB68AB00AD67A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4E607932FEB68AB00AD67A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4E607772FEB68AA00AD67A3 /* Build configuration list for PBXProject "Sherlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E607922FEB68AB00AD67A3 /* Debug */,
+				C4E607932FEB68AB00AD67A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E6078F2FEB68AB00AD67A3 /* Build configuration list for PBXNativeTarget "Sherlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E607902FEB68AB00AD67A3 /* Debug */,
+				C4E607912FEB68AB00AD67A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4E607742FEB68AA00AD67A3 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module KKImageCompressKitSwift {
+  umbrella header "KKImageCompressKitSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

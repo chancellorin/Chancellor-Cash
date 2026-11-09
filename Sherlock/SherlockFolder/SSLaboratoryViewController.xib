@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSLaboratoryViewController" customModule="Sherlock" customModuleProvider="target">
+            <connections>
+                <outlet property="laboratoryArbtt" destination="Vhe-wn-0rV" id="aDl-hW-RUQ"/>
+                <outlet property="laboratoryPredict" destination="kT4-Ub-cdZ" id="hhT-bj-CF3"/>
+                <outlet property="laboratoryTotlbtt" destination="MMq-v6-H3k" id="Pj4-FG-OQF"/>
+                <outlet property="laboratorybtt" destination="gFf-bS-caU" id="1B0-JD-pkV"/>
+                <outlet property="laboratorybttop" destination="cX9-sz-aqW" id="iH0-ct-6fZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBg-Or-EVx">
+                    <rect key="frame" x="0.0" y="724" width="393" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFf-bS-caU">
+                            <rect key="frame" x="14" y="48" width="365" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="g9F-sr-pFR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="bttselect:" destination="-1" eventType="touchUpInside" id="cQL-oR-UFm"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDU-Uu-tqM">
+                            <rect key="frame" x="34.333333333333343" y="10" width="324.66666666666663" height="28"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhe-wn-0rV">
+                                    <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="28" id="9dJ-Af-bQU"/>
+                                        <constraint firstAttribute="height" constant="28" id="RGW-cL-cCw"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="detective_read_n"/>
+                                    <state key="selected" image="detective_read_s"/>
+                                    <connections>
+                                        <action selector="arbttselect:" destination="-1" eventType="touchUpInside" id="gYk-cr-m0o"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read and agreed with the " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD4-jQ-yd1">
+                                    <rect key="frame" x="28" y="0.0" width="186.66666666666666" height="28"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMq-v6-H3k">
+                                    <rect key="frame" x="214.66666666666663" y="0.0" width="110" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="110" id="se9-U6-Cg3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="totlbttselect:" destination="-1" eventType="touchUpInside" id="KK2-jb-aVl"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="QD4-jQ-yd1" firstAttribute="leading" secondItem="Vhe-wn-0rV" secondAttribute="trailing" id="0EJ-8x-KUo"/>
+                                <constraint firstAttribute="trailing" secondItem="MMq-v6-H3k" secondAttribute="trailing" id="BJg-7n-aAx"/>
+                                <constraint firstItem="Vhe-wn-0rV" firstAttribute="top" secondItem="xDU-Uu-tqM" secondAttribute="top" id="Beq-W8-NqC"/>
+                                <constraint firstItem="QD4-jQ-yd1" firstAttribute="top" secondItem="xDU-Uu-tqM" secondAttribute="top" id="C3q-U7-ki6"/>
+                                <constraint firstAttribute="bottom" secondItem="QD4-jQ-yd1" secondAttribute="bottom" id="YEf-lN-nIk"/>
+                                <constraint firstAttribute="bottom" secondItem="Vhe-wn-0rV" secondAttribute="bottom" id="ZUc-hC-D8z"/>
+                                <constraint firstItem="Vhe-wn-0rV" firstAttribute="leading" secondItem="xDU-Uu-tqM" secondAttribute="leading" id="hq7-5o-lnr"/>
+                                <constraint firstAttribute="bottom" secondItem="MMq-v6-H3k" secondAttribute="bottom" id="s0S-NH-3bb"/>
+                                <constraint firstItem="MMq-v6-H3k" firstAttribute="leading" secondItem="QD4-jQ-yd1" secondAttribute="trailing" id="wpb-bk-lwZ"/>
+                                <constraint firstItem="MMq-v6-H3k" firstAttribute="top" secondItem="xDU-Uu-tqM" secondAttribute="top" id="zkl-LZ-Cnz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gFf-bS-caU" secondAttribute="trailing" constant="14" id="EB0-wC-Q3i"/>
+                        <constraint firstAttribute="bottom" secondItem="gFf-bS-caU" secondAttribute="bottom" constant="30" id="LoF-eg-MZx"/>
+                        <constraint firstItem="xDU-Uu-tqM" firstAttribute="centerX" secondItem="pBg-Or-EVx" secondAttribute="centerX" id="USB-HY-Qjm"/>
+                        <constraint firstItem="gFf-bS-caU" firstAttribute="top" secondItem="xDU-Uu-tqM" secondAttribute="bottom" constant="10" id="bMR-Rp-x5E"/>
+                        <constraint firstItem="gFf-bS-caU" firstAttribute="top" secondItem="pBg-Or-EVx" secondAttribute="top" constant="48" id="cX9-sz-aqW"/>
+                        <constraint firstItem="gFf-bS-caU" firstAttribute="leading" secondItem="pBg-Or-EVx" secondAttribute="leading" constant="14" id="m9x-cq-dhq"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT4-Ub-cdZ" customClass="SSLaboratoryPredict" customModule="Sherlock" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="118" width="393" height="606"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kT4-Ub-cdZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2qU-FX-sgn"/>
+                <constraint firstItem="kT4-Ub-cdZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9gW-M4-9k9"/>
+                <constraint firstAttribute="bottom" secondItem="pBg-Or-EVx" secondAttribute="bottom" id="NMd-BW-Bez"/>
+                <constraint firstItem="pBg-Or-EVx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QrI-CS-Wum"/>
+                <constraint firstItem="pBg-Or-EVx" firstAttribute="top" secondItem="kT4-Ub-cdZ" secondAttribute="bottom" id="beZ-hm-LJM"/>
+                <constraint firstItem="pBg-Or-EVx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="i6X-v6-7YJ"/>
+                <constraint firstItem="kT4-Ub-cdZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qzP-eI-bbX"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="detective_read_n" width="18" height="18"/>
+        <image name="detective_read_s" width="18" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSSleuthViewController" customModule="Sherlock" customModuleProvider="target">
+            <connections>
+                <outlet property="sleuthcollv" destination="hff-sf-AQX" id="ILM-p3-ucB"/>
+                <outlet property="sleuthcollvT" destination="fnn-XN-fL4" id="H9V-z2-tJg"/>
+                <outlet property="sleuthment" destination="fvc-va-Cvg" id="NZn-s8-QE1"/>
+                <outlet property="sleuthna" destination="sUt-35-TSL" id="kUg-pj-NSH"/>
+                <outlet property="sleuthprom" destination="9h9-Q2-rAZ" id="ecs-rp-a4X"/>
+                <outlet property="sleuthscoll" destination="agg-Gu-Qlv" id="My8-bh-63n"/>
+                <outlet property="sleuthtable" destination="6M4-60-uoV" id="a8r-Zw-aNW"/>
+                <outlet property="sleuthtableH" destination="s6j-EI-17F" id="ofi-sv-NA0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jz-w7-DPo">
+                    <rect key="frame" x="14" y="132" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="p5H-ue-kvm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                    <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chancellor Cash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sUt-35-TSL">
+                    <rect key="frame" x="14" y="152" width="313" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="aB8-Vg-izA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBM-xB-8It">
+                    <rect key="frame" x="341" y="132" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="abe-kr-nwb"/>
+                        <constraint firstAttribute="height" constant="38" id="kd4-D6-N6e"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="sleuth_menu"/>
+                    <connections>
+                        <action selector="sleuth_menuselect:" destination="-1" eventType="touchUpInside" id="msd-U4-hkf"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agg-Gu-Qlv">
+                    <rect key="frame" x="0.0" y="191" width="393" height="593"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hff-sf-AQX" customClass="SSSleuthCollection" customModule="Sherlock" customModuleProvider="target">
+                            <rect key="frame" x="14" y="3" width="365" height="87"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="87" id="Mta-dW-f5W"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="N7v-Yh-0TI">
+                                <size key="itemSize" width="65" height="87"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6M4-60-uoV" customClass="SSSleuthTable" customModule="Sherlock" customModuleProvider="target">
+                            <rect key="frame" x="14" y="108" width="365" height="250"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="s6j-EI-17F"/>
+                            </constraints>
+                        </tableView>
+                        <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-va-Cvg" customClass="SSSleuthPredictment" customModule="Sherlock" customModuleProvider="target">
+                            <rect key="frame" x="14" y="3" width="365" height="135"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="135" id="HZS-ny-ojY"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h9-Q2-rAZ" customClass="SSSleuthLabel" customModule="Sherlock" customModuleProvider="target">
+                            <rect key="frame" x="14" y="102" width="365" height="0.0"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.0" alpha="0.070000000000000007" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                            <color key="textColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ss_cornerRadius">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ss_borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="ss_borderColor">
+                                    <color key="value" red="0.66666666669999997" green="1" blue="0.0" alpha="0.20999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="fvc-va-Cvg" firstAttribute="top" secondItem="agg-Gu-Qlv" secondAttribute="top" constant="3" id="L0G-mZ-Q9h"/>
+                        <constraint firstAttribute="trailing" secondItem="6M4-60-uoV" secondAttribute="trailing" constant="14" id="Nrv-IX-5fD"/>
+                        <constraint firstAttribute="trailing" secondItem="fvc-va-Cvg" secondAttribute="trailing" constant="14" id="O3e-Bw-2es"/>
+                        <constraint firstItem="9h9-Q2-rAZ" firstAttribute="top" secondItem="hff-sf-AQX" secondAttribute="bottom" constant="12" id="PSC-EB-uUF"/>
+                        <constraint firstAttribute="trailing" secondItem="9h9-Q2-rAZ" secondAttribute="trailing" constant="14" id="R84-5p-FYL"/>
+                        <constraint firstAttribute="bottom" secondItem="6M4-60-uoV" secondAttribute="bottom" id="XdK-2W-nhE"/>
+                        <constraint firstItem="9h9-Q2-rAZ" firstAttribute="leading" secondItem="agg-Gu-Qlv" secondAttribute="leading" constant="14" id="blh-ET-UYR"/>
+                        <constraint firstItem="hff-sf-AQX" firstAttribute="top" secondItem="agg-Gu-Qlv" secondAttribute="top" constant="3" id="fnn-XN-fL4"/>
+                        <constraint firstAttribute="trailing" secondItem="hff-sf-AQX" secondAttribute="trailing" constant="14" id="hYN-q5-Seu"/>
+                        <constraint firstItem="hff-sf-AQX" firstAttribute="centerX" secondItem="agg-Gu-Qlv" secondAttribute="centerX" id="o19-ha-j6K"/>
+                        <constraint firstItem="fvc-va-Cvg" firstAttribute="leading" secondItem="agg-Gu-Qlv" secondAttribute="leading" constant="14" id="rAq-la-AoK"/>
+                        <constraint firstItem="6M4-60-uoV" firstAttribute="top" secondItem="9h9-Q2-rAZ" secondAttribute="bottom" constant="6" id="wO1-wj-SIG"/>
+                        <constraint firstItem="hff-sf-AQX" firstAttribute="leading" secondItem="agg-Gu-Qlv" secondAttribute="leading" constant="14" id="x3z-sp-oTw"/>
+                        <constraint firstItem="6M4-60-uoV" firstAttribute="leading" secondItem="agg-Gu-Qlv" secondAttribute="leading" constant="14" id="zlU-cd-EsM"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Jz-w7-DPo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="Amx-Ep-4Co"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="agg-Gu-Qlv" secondAttribute="trailing" id="Hut-Xy-Myr"/>
+                <constraint firstItem="sUt-35-TSL" firstAttribute="leading" secondItem="7Jz-w7-DPo" secondAttribute="leading" id="K92-VX-KMf"/>
+                <constraint firstItem="sUt-35-TSL" firstAttribute="top" secondItem="7Jz-w7-DPo" secondAttribute="bottom" id="PKd-YM-0Km"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="agg-Gu-Qlv" secondAttribute="bottom" id="X5m-7a-5FK"/>
+                <constraint firstItem="7Jz-w7-DPo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="afA-l4-ixS"/>
+                <constraint firstItem="lBM-xB-8It" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="eFx-Oc-1Yz"/>
+                <constraint firstItem="lBM-xB-8It" firstAttribute="leading" secondItem="sUt-35-TSL" secondAttribute="trailing" constant="14" id="fOK-GR-YVv"/>
+                <constraint firstItem="agg-Gu-Qlv" firstAttribute="top" secondItem="sUt-35-TSL" secondAttribute="bottom" constant="10" id="hb4-ng-yDP"/>
+                <constraint firstItem="agg-Gu-Qlv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jYz-gV-OLL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lBM-xB-8It" secondAttribute="trailing" constant="14" id="pBI-9P-E9p"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sleuth_menu" width="38" height="38"/>
+    </resources>
+</document>

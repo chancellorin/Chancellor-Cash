@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSVeteranViewController" customModule="Sherlock" customModuleProvider="target">
+            <connections>
+                <outlet property="verteranbtt" destination="8U2-ie-uQX" id="4sD-UJ-L8W"/>
+                <outlet property="veterantable" destination="aUB-L4-KgJ" id="MDU-jp-ZdQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8U2-ie-uQX">
+                    <rect key="frame" x="14" y="772" width="365" height="50"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TB5-5h-bta"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ss_cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="verteranbttselecy:" destination="-1" eventType="touchUpInside" id="aqh-6c-mBu"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aUB-L4-KgJ" customClass="SSVeteranTable" customModule="Sherlock" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="128" width="393" height="630"/>
+                    <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aUB-L4-KgJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="GbJ-47-7N5"/>
+                <constraint firstItem="8U2-ie-uQX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="V5b-Vv-tJa"/>
+                <constraint firstItem="aUB-L4-KgJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cKe-KC-TlH"/>
+                <constraint firstAttribute="bottom" secondItem="8U2-ie-uQX" secondAttribute="bottom" constant="30" id="iFi-mo-4Xk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8U2-ie-uQX" secondAttribute="trailing" constant="14" id="pqf-Uk-mMT"/>
+                <constraint firstItem="8U2-ie-uQX" firstAttribute="top" secondItem="aUB-L4-KgJ" secondAttribute="bottom" constant="14" id="rp8-2e-1J2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aUB-L4-KgJ" secondAttribute="trailing" id="vTL-s1-thk"/>
+            </constraints>
+            <point key="canvasLocation" x="-34.351145038167935" y="20.422535211267608"/>
+        </view>
+    </objects>
+</document>

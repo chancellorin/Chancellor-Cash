@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSLandladyViewController" customModule="Sherlock" customModuleProvider="target">
+            <connections>
+                <outlet property="landladytipv" destination="wYv-me-4Ml" id="E10-cb-I7i"/>
+                <outlet property="landtipen" destination="clm-eZ-01S" id="qaA-Va-J2a"/>
+                <outlet property="landtiphi" destination="1mL-bX-ygv" id="BvH-Bt-9GO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYv-me-4Ml">
+                    <rect key="frame" x="14" y="128" width="365" height="46"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clm-eZ-01S">
+                            <rect key="frame" x="15" y="15" width="335" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mL-bX-ygv">
+                            <rect key="frame" x="15" y="31" width="335" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjc-ew-QBk">
+                            <rect key="frame" x="15" y="23" width="335" height="1"/>
+                            <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="WsO-zn-nwQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="wjc-ew-QBk" firstAttribute="leading" secondItem="wYv-me-4Ml" secondAttribute="leading" constant="15" id="6PW-Bk-mpp"/>
+                        <constraint firstItem="1mL-bX-ygv" firstAttribute="trailing" secondItem="clm-eZ-01S" secondAttribute="trailing" id="9lB-do-i9u"/>
+                        <constraint firstItem="1mL-bX-ygv" firstAttribute="leading" secondItem="clm-eZ-01S" secondAttribute="leading" id="Mcg-Uo-Mrf"/>
+                        <constraint firstAttribute="trailing" secondItem="wjc-ew-QBk" secondAttribute="trailing" constant="15" id="Qxh-KO-bOy"/>
+                        <constraint firstAttribute="trailing" secondItem="clm-eZ-01S" secondAttribute="trailing" constant="15" id="TIe-XF-yra"/>
+                        <constraint firstAttribute="bottom" secondItem="1mL-bX-ygv" secondAttribute="bottom" constant="15" id="V5q-o6-xnT"/>
+                        <constraint firstItem="1mL-bX-ygv" firstAttribute="top" secondItem="clm-eZ-01S" secondAttribute="bottom" constant="16" id="Vr6-oi-gaZ"/>
+                        <constraint firstItem="clm-eZ-01S" firstAttribute="leading" secondItem="wYv-me-4Ml" secondAttribute="leading" constant="15" id="Z7c-EC-hGq"/>
+                        <constraint firstItem="clm-eZ-01S" firstAttribute="top" secondItem="wYv-me-4Ml" secondAttribute="top" constant="15" id="fBv-3P-Nab"/>
+                        <constraint firstItem="wjc-ew-QBk" firstAttribute="top" secondItem="clm-eZ-01S" secondAttribute="bottom" constant="8" id="krC-4E-kQj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ss_cornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ss_borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ss_borderColor">
+                            <color key="value" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.047058823529411764" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wYv-me-4Ml" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="YxP-rP-325"/>
+                <constraint firstAttribute="trailing" secondItem="wYv-me-4Ml" secondAttribute="trailing" constant="14" id="iUA-Bf-CzR"/>
+                <constraint firstItem="wYv-me-4Ml" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="jQ8-ls-9LA"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+</document>

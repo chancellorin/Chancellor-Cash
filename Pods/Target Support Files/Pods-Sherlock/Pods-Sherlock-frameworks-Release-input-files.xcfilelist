@@ -1,0 +1,22 @@
+${PODS_ROOT}/Target Support Files/Pods-Sherlock/Pods-Sherlock-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Adjust/AdjustSdk.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CHIOTPField/CHIOTPField.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardCore/IQKeyboardCore.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardNotification/IQKeyboardNotification.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardReturnManager/IQKeyboardReturnManager.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardToolbar/IQKeyboardToolbar.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardToolbarManager/IQKeyboardToolbarManager.framework
+${BUILT_PRODUCTS_DIR}/IQTextInputViewNotification/IQTextInputViewNotification.framework
+${BUILT_PRODUCTS_DIR}/IQTextView/IQTextView.framework
+${BUILT_PRODUCTS_DIR}/KKCameraKitSwift/KKCameraKitSwift.framework
+${BUILT_PRODUCTS_DIR}/KKDeviceInsightKitSwift/KKDeviceInsightKitSwift.framework
+${BUILT_PRODUCTS_DIR}/KKImageCompressKitSwift/KKImageCompressKitSwift.framework
+${BUILT_PRODUCTS_DIR}/KKUtilsKitSwift/KKUtilsKitSwift.framework
+${BUILT_PRODUCTS_DIR}/KakaJSON/KakaJSON.framework
+${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AdjustSignature/AdjustSigSdk.framework/AdjustSigSdk

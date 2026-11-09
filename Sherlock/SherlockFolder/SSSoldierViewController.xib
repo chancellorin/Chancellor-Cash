@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSSoldierViewController" customModule="Sherlock" customModuleProvider="target">
+            <connections>
+                <outlet property="soldierbtt" destination="k53-ub-feU" id="mJq-of-pgw"/>
+                <outlet property="soldierpredict" destination="xrk-gX-kZU" id="i8n-SV-bUd"/>
+                <outlet property="soldierpredictult" destination="cd9-em-LjP" id="ueU-Ev-cqY"/>
+                <outlet property="soldierultheight" destination="3hF-5o-fCR" id="VKH-7c-Sih"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrk-gX-kZU" customClass="SSSoldierPredict" customModule="Sherlock" customModuleProvider="target">
+                    <rect key="frame" x="14" y="128" width="365" height="280"/>
+                    <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="VeH-2r-x2X"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ss_cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ss_borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ss_borderColor">
+                            <color key="value" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd9-em-LjP" customClass="SSSoldierPredictult" customModule="Sherlock" customModuleProvider="target">
+                    <rect key="frame" x="14" y="422" width="365" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="3hF-5o-fCR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k53-ub-feU">
+                    <rect key="frame" x="14" y="470" width="365" height="50"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Yt7-Nw-UpZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ss_cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="soldierbttselect:" destination="-1" eventType="touchUpInside" id="eWW-hE-5Bv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xrk-gX-kZU" secondAttribute="trailing" constant="14" id="5uS-Bs-g6P"/>
+                <constraint firstItem="xrk-gX-kZU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="7q2-0n-D5R"/>
+                <constraint firstItem="k53-ub-feU" firstAttribute="top" secondItem="cd9-em-LjP" secondAttribute="bottom" constant="48" id="Flk-oR-IFt"/>
+                <constraint firstItem="cd9-em-LjP" firstAttribute="trailing" secondItem="xrk-gX-kZU" secondAttribute="trailing" id="NhD-RK-6yv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k53-ub-feU" secondAttribute="trailing" constant="14" id="Pt1-3J-QEK"/>
+                <constraint firstItem="xrk-gX-kZU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Wm9-2A-fOU"/>
+                <constraint firstItem="cd9-em-LjP" firstAttribute="top" secondItem="xrk-gX-kZU" secondAttribute="bottom" constant="14" id="ZNZ-4p-Eoc"/>
+                <constraint firstItem="cd9-em-LjP" firstAttribute="leading" secondItem="xrk-gX-kZU" secondAttribute="leading" id="bjK-8g-0XN"/>
+                <constraint firstItem="k53-ub-feU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="gdV-jJ-I0B"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="21"/>
+        </view>
+    </objects>
+</document>

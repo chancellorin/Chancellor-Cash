@@ -1,0 +1,6 @@
+framework module Pods_Sherlock {
+  umbrella header "Pods-Sherlock-umbrella.h"
+
+  export *
+  module * { export * }
+}

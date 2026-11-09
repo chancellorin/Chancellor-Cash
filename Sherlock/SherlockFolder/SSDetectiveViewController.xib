@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSDetectiveViewController" customModule="Sherlock" customModuleProvider="target">
+            <connections>
+                <outlet property="detectiveArbtt" destination="bPq-8e-GhM" id="QPd-bq-FmG"/>
+                <outlet property="detectivePrpo" destination="2Nk-u5-Swa" id="7gb-Co-5p3"/>
+                <outlet property="detectiveSeag" destination="Z4f-ko-Jy5" id="at4-ae-RJv"/>
+                <outlet property="detectivebutt" destination="t7J-0J-ate" id="LNp-oV-Qe8"/>
+                <outlet property="detectiveline" destination="GW3-eD-Zx6" id="QXj-kJ-SAz"/>
+                <outlet property="detectivepredict" destination="hag-R3-G4G" id="5vA-z5-GWZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrr-he-dhH">
+                    <rect key="frame" x="20" y="193" width="191" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="c0m-02-0Qq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aQ-dA-hcU">
+                    <rect key="frame" x="20" y="229" width="145" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="qPD-v6-52s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GW3-eD-Zx6">
+                    <rect key="frame" x="20" y="264" width="44" height="3"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="RhH-QU-pLP"/>
+                        <constraint firstAttribute="height" constant="3" id="ZJw-Bt-g7k"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="1.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read and accepted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAc-Ie-Qby">
+                    <rect key="frame" x="132.66666666666669" y="640" width="145.66666666666669" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="zHe-QF-Mek"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7J-0J-ate">
+                    <rect key="frame" x="20" y="704" width="353" height="52"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="k7Y-10-jYC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Sign in">
+                        <color key="titleColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="26"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="detectiveselect:" destination="-1" eventType="touchUpInside" id="8GR-8c-NyP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YT-Jy-Ou2">
+                    <rect key="frame" x="168.66666666666666" y="663" width="22" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="DyP-w4-HqA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4f-ko-Jy5">
+                    <rect key="frame" x="190.66666666666666" y="663" width="121.99999999999997" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="122" id="CDg-XB-KIh"/>
+                        <constraint firstAttribute="height" constant="23" id="tU7-ln-wr6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Service Agreement">
+                        <color key="titleColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="detectiveselect:" destination="-1" eventType="touchUpInside" id="l9k-gy-wrh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nk-u5-Swa">
+                    <rect key="frame" x="80.666666666666671" y="663" width="88.000000000000014" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="NL6-pP-RSE"/>
+                        <constraint firstAttribute="width" constant="88" id="fUA-vP-d6z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Privacy Policy">
+                        <color key="titleColor" red="0.66666666669999997" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="detectiveselect:" destination="-1" eventType="touchUpInside" id="5IO-HK-CAp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPq-8e-GhM">
+                    <rect key="frame" x="106.66666666666667" y="642.66666666666663" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="6Ug-oc-BVo"/>
+                        <constraint firstAttribute="height" constant="18" id="YMx-0z-Cbc"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="detective_read_n"/>
+                    <state key="selected" image="detective_read_s"/>
+                    <connections>
+                        <action selector="detectiveselect:" destination="-1" eventType="touchUpInside" id="yVo-4V-74k"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hag-R3-G4G" customClass="SSDetectivePredict" customModule="Sherlock" customModuleProvider="target">
+                    <rect key="frame" x="20" y="287" width="353" height="265"/>
+                    <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="265" id="KyF-f4-Kh9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detective_star" translatesAutoresizingMaskIntoConstraints="NO" id="59X-By-7MD">
+                    <rect key="frame" x="343" y="118" width="31" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="G7V-8D-piM"/>
+                        <constraint firstAttribute="height" constant="31" id="TRY-CZ-BKk"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7YT-Jy-Ou2" firstAttribute="leading" secondItem="2Nk-u5-Swa" secondAttribute="trailing" id="5XT-yZ-3FH"/>
+                <constraint firstItem="7YT-Jy-Ou2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-17" id="65O-vw-KTW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="t7J-0J-ate" secondAttribute="bottom" constant="28" id="9cw-nE-6Kp"/>
+                <constraint firstItem="zrr-he-dhH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AgJ-VN-ajm"/>
+                <constraint firstItem="t7J-0J-ate" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BOK-MS-G0C"/>
+                <constraint firstItem="Z4f-ko-Jy5" firstAttribute="top" secondItem="CAc-Ie-Qby" secondAttribute="bottom" id="HRE-go-HbQ"/>
+                <constraint firstItem="CAc-Ie-Qby" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="9" id="K9W-eD-cL3"/>
+                <constraint firstItem="7YT-Jy-Ou2" firstAttribute="top" secondItem="CAc-Ie-Qby" secondAttribute="bottom" id="OYB-gU-Pq1"/>
+                <constraint firstItem="GW3-eD-Zx6" firstAttribute="leading" secondItem="7aQ-dA-hcU" secondAttribute="leading" id="Pny-bm-Cp8"/>
+                <constraint firstItem="59X-By-7MD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QeJ-jb-Xyw"/>
+                <constraint firstItem="zrr-he-dhH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="75" id="SMV-rC-ZuE"/>
+                <constraint firstItem="CAc-Ie-Qby" firstAttribute="leading" secondItem="bPq-8e-GhM" secondAttribute="trailing" constant="8" id="Vyn-qN-gb1"/>
+                <constraint firstItem="t7J-0J-ate" firstAttribute="top" secondItem="7YT-Jy-Ou2" secondAttribute="bottom" constant="18" id="Woy-60-3uA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="59X-By-7MD" secondAttribute="trailing" constant="19" id="aDK-mU-L06"/>
+                <constraint firstItem="7aQ-dA-hcU" firstAttribute="top" secondItem="zrr-he-dhH" secondAttribute="bottom" constant="3" id="bf1-Ew-HHF"/>
+                <constraint firstItem="CAc-Ie-Qby" firstAttribute="centerY" secondItem="bPq-8e-GhM" secondAttribute="centerY" id="fN0-la-Gi2"/>
+                <constraint firstItem="7aQ-dA-hcU" firstAttribute="leading" secondItem="zrr-he-dhH" secondAttribute="leading" id="gAB-aP-88F"/>
+                <constraint firstItem="hag-R3-G4G" firstAttribute="top" secondItem="GW3-eD-Zx6" secondAttribute="bottom" constant="20" id="hqm-Z5-2M2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hag-R3-G4G" secondAttribute="trailing" constant="20" id="oes-v8-lWe"/>
+                <constraint firstItem="hag-R3-G4G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qjc-G7-iMc"/>
+                <constraint firstItem="2Nk-u5-Swa" firstAttribute="top" secondItem="CAc-Ie-Qby" secondAttribute="bottom" id="r0J-8Y-6xl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t7J-0J-ate" secondAttribute="trailing" constant="20" id="rEs-0o-RxO"/>
+                <constraint firstItem="GW3-eD-Zx6" firstAttribute="top" secondItem="7aQ-dA-hcU" secondAttribute="bottom" constant="14" id="xyU-6x-XFB"/>
+                <constraint firstItem="Z4f-ko-Jy5" firstAttribute="leading" secondItem="7YT-Jy-Ou2" secondAttribute="trailing" id="zNj-Db-nwH"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="detective_read_n" width="18" height="18"/>
+        <image name="detective_read_s" width="18" height="18"/>
+        <image name="detective_star" width="30.666666030883789" height="30.666666030883789"/>
+    </resources>
+</document>
